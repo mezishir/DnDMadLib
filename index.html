@@ -4,18 +4,55 @@
         <link rel="stylesheet" href="./styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <Title>Design Your Own Dungeons and Dragons Mad Libs!
-        </Title>
+        <Title>D&D Mad Libs!</Title>
     </head>
 <body>
-Follow the prompts to fill in the words and click generate to find your DnD story!
-<button class="btn">Click me</button>
-<label for="noun">Noun Input</label>
-<input type="text" id="noun" spellcheck="true" pattern="[a-z]" maxlength="20" required />
-
-<p class="oldtext">Putting text to change here!</p>
+    <div>
+        <h1>Design Your Own Dungeons and Dragons Mad Lib!</h1>
+        
+    </div>
+    <div>
+         <p>We're going to keep it simple. Just fill out the boxes below and hit Generate Story. You will get one of three pre-written stories completed with your answers.</p>
+    </div>
+    <div class="container">
+        <div class="nouns">
+            <h2>Nouns</h2>
+            <p>Nouns are names of People, Places, or Things.</p>
+            <div class="example"><p id="nounex" class="textContainer" Title="C'mon. We made this one easy for you!">Examples</p></div>
+            <label for="heroname">Your Hero's Name: <input type="text" id="heroname" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="vname">Our Villain's Name: <input type="text" id="vname" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="townname">Town Name: <input type="text" id="townname" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="item1">An Item!: <input type="text" id="item1" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="item2">An Item!: <input type="text" id="item2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label>
+        </div>
+        <div class="verbs">
+            <h2>Verbs</h2>
+            <p>Verbs are action words.</p>
+            <div class="example"><p id="verbex" class="textContainer" Title="chase, damage, walk, visit, hang, pass, yawn, yell, kick, jump, reach">Examples</p></div>
+            <label for="item2">Any Verb: <input type="text" id="item2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="item2">Any Verb: <input type="text" id="item2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="item2">Any Verb: <input type="text" id="item2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="item2">Any Verb: <input type="text" id="item2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+        </div>
+        <div class="adjectives">
+            <h2>Adjectives</h2>
+            <p>Adjectives are descriptive words.</p>
+            <div class="example"><p id="adjex" class="textContainer" Title="dusty, old, puny, relieved, rotten, great, clumsy, fresh, long, loose, jealous, proud">Examples</p></div>
+            <label for="adj1">Any Adjective: <input type="text" id="adj1" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj2">Any Adjective: <input type="text" id="adj2" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj3">Any Adjective: <input type="text" id="adj3" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj4">Any Adjective: <input type="text" id="adj4" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj5">Any Adjective: <input type="text" id="adj5" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj6">Any Adjective: <input type="text" id="adj6" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+            <label for="adj7">Any Adjective: <input type="text" id="adj7" spellcheck="true" pattern="[a-z]" maxlength="20" required /></label><br>
+        </div>
+    </div>
+    <div class="btn">
+    <input type="button" class="bbtn" value="Generate Story!"/>
+    <input type="button" class="restart" value="Restart!"/>
+    </div>
 <p class="story"></p>
-<button class="restart">Restart</button>
+
 <script src="./main.js" charset="UTF-8"></script>
 </body>
     </html>
