@@ -29,6 +29,8 @@ daughter (girl)	plane	scale
 donkey	playground	visitor
 earthquake	poison	voyage
 feast	riddle	year
+
+
 Verbs
 Verbs are action words. You may need to change the verb you use another tense by adding –ed or –ing.
 
@@ -49,6 +51,8 @@ walk	grab	open
 work	hang	pass
 yawn	hug	pitch
 yell	imagine	promise
+
+
 Adjectives
 Adjectives are descriptive words. They modify or tell about nouns.
 
@@ -92,6 +96,8 @@ deafening	happy	nervous	small	wrong
 deep	heavy	nice	soft	yellow
 defeated	helpful	noisy	sparkling	young
 delicious	helpless	numerous	sparse	yummy
+
+
 Adverbs
 Adverbs tell how something is done. They modify (tell about) a verb, adjective, or another adjective. They frequently end in –ly.
 
@@ -159,3 +165,65 @@ Our hero <noun> <adjective> through the <random bit> and discovers a <random bit
 Suddenly <random bit>.
 
 it will be more complicated than it needs to be but arguably a lot more fun.
+
+
+
+Here is text to start with:
+
+Our hero, Hero, was wandering towards town when he suddenly encountered a great beast! 
+It was the legendary Beast Name! 
+Local legends have told about this mighty creature. 
+It bared its fangs and rushed our Hero. 
+Our Hero was brave. 
+Hero brandished his weapon and charged at the creature.
+The fowl beast was vanquished.
+The Hero arrived at his town to grand applause.
+
+Our hero, Hero, was wandering towards town when he suddenly encountered a great [dnd class]!
+It was the legendary Name!
+Local Legends have told about this mighty villain.
+It brandished its weapon and rushed our Hero.
+Our Hero was brave.
+Hero brandished his weapon and charged the villain.
+The fowl villain was vanquished.
+The hero arrived at his town to grand applause.
+
+Our hero, Hero, was wandering towards town when he came across a damsel.
+She was a beautiful woman named Name.
+Hero had heard of this damsel from local lore talking of her quaint beauty.
+Hero tried his best to woo the lady with his skills in swordsmanship.
+She was unimpressed.
+Name shooed Hero away with a wave of her hand.
+Hero was forced to leave the damsel and her sweet smile.
+The hero arrived at his town alone.
+
+
+Array needed for dnd class
+Hero and town nouns are repeated.
+
+Needed:
+Nouns:
+Hero Name
+Beast/Villain/Damsel name
+town
+2 more for things
+
+Adjectives
+7
+
+Verbs
+4
+
+
+prompt to get information
+only allow letters
+store information
+set information to proper casing
+put information into story in proper spots
+
+
+
+words need to be grouped into fieldsets per category
+autocapitalize="word" will autocapitalize first character of each word
+good for character name, town name, and villain name.
+lowercase in js for everything else.
