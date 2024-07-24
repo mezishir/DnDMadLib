@@ -1,35 +1,83 @@
-.restart, .story {
-    /*visibility: hidden;*/
+.restart, .astory {
+    visibility: hidden;
 }
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.uncial-antiqua-regular {
+    font-family: "Uncial Antiqua", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
 h1, h2, p {
     text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Sedan Sc";
+    color: rgb(255, 0, 0);
+}
+h2 {
+    font-family: "Uncial Antiqua";
+    font-size: 30px;
+    color:rgb(3, 3, 99);
+}
+p, label{
+    font-size: 18px;
+    color: white;
+}
+
+body {
+    background-image: url(./images/a-split-image-of-two-dnd-dragons-in-battle-against-adventurers.jpg);
+    background-size: cover;
 }
 
 .example {
     position:relative
 }
 
+.mainbox {
+    width: 90%;
+    margin: 0 auto;
+    background-color:rgba(59, 41, 1, 0.856);
+    padding: 10px;
+    height: 100vh
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .bbtn, .restart {
     display: block;
-    margin: 10px auto;
     height: 75px;
     width: 200px;
     font-size: 20px;
     border: 10px solid transparent;
     border-image: url(./images/border.png) 30% round;
+    border-image-width: 30px;
+    border-radius: 30px;
     background-color: transparent;
+    color: white;
 }
-.textContainer:hover:after{
+
+.textContainer:hover::after, .textContainer:focus::after {
     position: absolute;
     left: 55%;
     top: 10px;
     padding: 5px;
-    content: attr(Title);
+    content: attr(data-descr);
     border: 3px solid black;
     display: block;
     justify-content: center;
     max-width: 210px;
     background-color: white;
+    color: black;
 }
 .container {
     display: flex;
@@ -47,7 +95,8 @@ h1, h2, p {
     border: 5px solid rgb(0, 30, 161);
     border-radius: 10px;
     text-align: center;
-    height: 300px;
+    height: 320px;
+    background-color: rgba(255, 189, 8, 0.301);
 }
 
 @media (max-width: 1250px) {
