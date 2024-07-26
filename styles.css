@@ -1,6 +1,6 @@
-.restart, .astory {
+/* .restart, .astory {
     visibility: hidden;
-}
+} */
 .sedan-sc-regular {
     font-family: "Sedan SC", serif;
     font-weight: 400;
@@ -100,14 +100,7 @@ body {
     background-color: rgba(255, 189, 8, 0.301);
 }
 
-@media (max-width: 1249px) {
-    .container {
-        flex-direction: column;
-        height: 100%;
-    }
-}
 
-@media (min-width: 1250px) {
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -115,21 +108,31 @@ body {
     }
     .btn {
         grid-area: 2, 2, 3, 3;
+        background-color: blue;
     }
     .astory {
         grid-area: 1, 1, 2, 4;
-        
+        column-span: 3;
+        background-color: red;
     }
     .nouns {
         grid-area: 1, 1, 2, 2;
-        
+        background-color: green;
     }
     .verbs {
         grid-area: 1, 2, 2, 3;
-        
+        background-color: pink;
     }
     .adjectives {
         grid-area: 1, 3, 2, 4;
-       
+        background-color: purple;
+    
+    }
+
+
+@media (max-width: 1249px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
     }
 }
