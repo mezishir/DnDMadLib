@@ -10,12 +10,12 @@
         <Title>D&D Mad Libs!</Title>
     </head>
 <body>
-<div class="mainbox">
-    <div class="bstory">
     <div>
         <h1>Design Your Own Dungeons and Dragons Mad Lib!</h1>
-        
     </div>
+<div class="mainbox">
+    <div class="bstory">
+    
     <div >
          <p>We're going to keep it simple. Just fill out the boxes below and hit Generate Story. You will get one of three pre-written stories completed with your answers.</p>
     </div>
@@ -62,17 +62,20 @@
                 <p id="updated">Story content</p>
             </div>
         </div>
+        <div class="rstbtn">
+                <input type="button" class="restart" value="Restart!"/>
+            </div>
         <div class="btn">
-            <input type="button" class="bbtn" value="Generate Story!"/>
+            <input type="button" class="bbtn" value="Generate Story!" onclick="window.location.href='#top'"/>
         </form>
-        </div>
-        <div class="btn">
-            <input type="button" class="restart" value="Restart!"/>
         </div>
     </div>
     </div>
     
 </div>
+<footer>
+    <p class="copyright">&#169; 2024. Site created by <a href="https://github.com/mezishir">Amber Cruse</a>.
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./main.js" charset="UTF-8"></script>
 </body>
