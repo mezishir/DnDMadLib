@@ -193,10 +193,10 @@ body {
     }
     .astory {
         text-align: center;
-        align-items: center;
         justify-items: center;
         grid-area: 1/1;
     }
+
     .nouns, .verbs, .adjectives {
         width: 90%;
         height: auto;
